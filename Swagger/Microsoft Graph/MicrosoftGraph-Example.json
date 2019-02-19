@@ -4,10 +4,10 @@
 		"version": "v1",
 		"title": "Microsoft Graph - Example"
 	},
-	"host": "graph.microsoft.com",
+	"host": "graph.microsoft.com/v1.0",
 	"schemes": ["https"],
 	"paths": {
-		"/beta/me": {
+		"/me": {
 			"get": {
 				"tags": ["Me"],
 				"operationId": "Me",
@@ -26,7 +26,7 @@
 				"deprecated": false
 			}
 		},
-		"/beta/users/{userid}": {
+		"/users/{userid}": {
 			"get": {
 				"tags": ["LoadUser"],
 				"operationId": "LoadUser",
@@ -48,7 +48,7 @@
 				}
 			}
 		},
-		"/beta/users": {
+		"/users": {
 			"get": {
 				"tags": ["ListUsers"],
 				"operationId": "ListUsers",
@@ -65,7 +65,7 @@
 				}
 			}
 		},
-		"/beta/me/workingWith": {
+		"/me/workingWith": {
 			"get": {
 				"tags": ["ListMeWorkingWith"],
 				"operationId": "ListMeWorkingWith",
@@ -82,7 +82,7 @@
 				}
 			}
 		},
-		"/beta/me/trendingAround": {
+		"/me/trendingAround": {
 			"get": {
 				"tags": ["ListMeTrendingAround"],
 				"operationId": "ListMeTrendingAround",
@@ -99,7 +99,7 @@
 				}
 			}
 		},
-		"/beta/users/{userid}/trendingAround": {
+		"/users/{userid}/trendingAround": {
 			"get": {
 				"tags": ["ListUserTrendingAround"],
 				"operationId": "ListUserTrendingAround",
@@ -121,7 +121,7 @@
 				}
 			}
 		},
-        "/beta/users/{userid}/workingWith": {
+    "/users/{userid}/workingWith": {
 			"get": {
 				"tags": ["ListUserWorkingWith"],
 				"operationId": "ListUserWorkingWith",
@@ -143,7 +143,7 @@
 				}
 			}
 		},
-		"v1.0/groups/{groupid}/members": {
+		"/groups/{groupid}/members": {
 			"get": {
 				"tags": ["ListGroupMembership"],
 				"operationId": "ListGroupMembership",
@@ -165,7 +165,7 @@
 				}
 			}
 		},
-		"v1.0/groups": {
+		"/groups": {
 			"get": {
 				"tags": ["ListGroups"],
 				"operationId": "ListGroups",
@@ -182,7 +182,7 @@
 				}
 			}
 		},
-		"v1.0/groups/{groupid}": {
+		"/groups/{groupid}": {
 			"get": {
 				"tags": ["LoadGroup"],
 				"operationId": "LoadGroup",
@@ -204,7 +204,7 @@
 				}
 			}
 		},
-        "v1.0/users/{userid}/memberOf": {
+    "/users/{userid}/memberOf": {
 			"get": {
 				"tags": ["ListUserGroups"],
 				"operationId": "ListUserGroups",
@@ -226,7 +226,7 @@
 				}
 			}
 		},
-		"/beta/me/drive/root/children": {
+		"/me/drive/root/children": {
 			"get": {
 				"tags": ["ListMeFiles"],
 				"operationId": "ListMeFiles",
@@ -243,7 +243,7 @@
 				}
 			}
 		},                		
-		"/beta/users/{userid}/drive/root/children": {
+		"/users/{userid}/drive/root/children": {
 			"get": {
 				"tags": ["ListUserFiles"],
 				"operationId": "ListUserFiles",
@@ -265,7 +265,7 @@
 				}
 			}
 		},                		
-		"/beta/me/people": {
+		"/me/people": {
 			"get": {
 				"tags": ["ListMePeople"],
 				"operationId": "ListMePeople",
@@ -282,7 +282,7 @@
 				}
 			}
 		},                		
-		"/beta/me/people('{personid}')": {
+		"/me/people('{personid}')": {
 			"get": {
 				"tags": ["LoadMePerson"],
 				"operationId": "LoadMePerson",
@@ -304,7 +304,7 @@
 				}
 			}
 		},
-        "/beta/users/{userid}/people": {
+    "/users/{userid}/people": {
 			"get": {
 				"tags": ["ListUserPeople"],
 				"operationId": "ListUserPeople",
@@ -326,7 +326,7 @@
 				}
 			}
 		},  
-        "/beta/users/{userid}/people('{personid}')": {
+    "/users/{userid}/people('{personid}')": {
 			"get": {
 				"tags": ["LoadUserPerson"],
 				"operationId": "LoadUserPerson",
