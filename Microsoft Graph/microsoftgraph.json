@@ -1,6 +1,6 @@
 {
-    "version": "1.0",
-    "baseUri": "https://graph.microsoft-ppe.com/beta/",
+    "version": "2.0",
+    "baseUri": "https://graph.microsoft.com/v1.0/",
     "entities": {
         "Identity": {
             "id": "Identity",
