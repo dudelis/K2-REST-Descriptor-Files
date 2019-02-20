@@ -358,12 +358,6 @@
 		}
     },
 	"definitions": {
-		"Object": {
-			"type": "object",
-			"properties": {
-				
-			}
-		},
 		"GraphUser": {
 			"type": "object",
 			"properties": {
