@@ -8,7 +8,7 @@
 	"schemes": [ "https"],
 	"produces": [ "application/json" ],
 	"paths": {
-		"{tenantid}/v1.0/me?api-version=1.6": {
+		"{tenantid}/me?api-version=1.6": {
 			"get": {
 				"tags": [
 					"Me"
@@ -34,7 +34,7 @@
 				}
 			}
 		},
-		"{tenantid}/v1.0/users/{userid}?api-version=1.6": {
+		"{tenantid}/users/{userid}?api-version=1.6": {
 			"get": {
 				"tags": [
 					"GetUser"
@@ -64,7 +64,7 @@
 				}
 			}
 		},
-		"{tenantid}/v1.0/users?api-version=1.6": {
+		"{tenantid}/users?api-version=1.6": {
 			"get": {
 				"tags": [
 					"ListUsers"
