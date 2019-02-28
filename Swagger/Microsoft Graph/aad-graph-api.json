@@ -8,7 +8,7 @@
 	"schemes": [ "https"],
 	"produces": [ "application/json" ],
 	"paths": {
-		"/v1.0/me": {
+		"{tenantid}/v1.0/me?api-version=1.6": {
 			"get": {
 				"tags": [
 					"Me"
@@ -18,7 +18,12 @@
 					"text/json",
 					"application/json"
 				],
-				"parameters": [],
+				"parameters": [{
+					"name": "tenantid",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
 				"responses": {
 					"200": {
 						"description": "OK",
@@ -29,22 +34,26 @@
 				}
 			}
 		},
-		"/v1.0/users/{userid}": {
+		"{tenantid}/v1.0/users/{userid}?api-version=1.6": {
 			"get": {
 				"tags": [
-					"LoadUser"
+					"GetUser"
 				],
-				"operationId": "LoadUser",
+				"operationId": "GetUser",
 				"produces": [
 					"application/json"
 				],
 				"parameters": [{
-						"name": "userid",
-						"in": "path",
-						"required": true,
-						"type": "string"
-					}
-				],
+					"name": "userid",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				},{
+					"name": "tenantid",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
 				"responses": {
 					"200": {
 						"description": "Success",
@@ -55,7 +64,7 @@
 				}
 			}
 		},
-		"/v1.0/users": {
+		"{tenantid}/v1.0/users?api-version=1.6": {
 			"get": {
 				"tags": [
 					"ListUsers"
@@ -65,7 +74,12 @@
 				"produces": [
 					"application/json"
 				],
-				"parameters": [],
+				"parameters": [{
+					"name": "tenantid",
+					"in": "path",
+					"required": true,
+					"type": "string"
+				}],
 				"responses": {
 					"200": {
 						"description": "Success",
